@@ -1,0 +1,83 @@
+/* stopwatch.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #eec0c2 0%, #b37aa0 99%, #fecfef 100%);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.stopwatch {
+    background: #ffffff;
+    padding: 30px 50px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.stopwatch h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+#display {
+    font-size: 2.5em;
+    margin: 20px 0;
+    color: #007bff;
+}
+
+.controls button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 6px;
+    background-color: #007bff;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.controls button:disabled {
+    background-color: #ccc;
+}
+
+.controls button:hover:enabled {
+    background-color: #0056b3;
+}
+
+.laps {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.laps h2 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.laps ul {
+    list-style-type: none;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    border-top: 1px solid #ccc;
+    margin-top: 10px;
+}
+
+.laps li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
